@@ -73,8 +73,10 @@
         </layout>
     </encoder>
   </appender>
+  
+  <logger name="com.github.gv2011.util.serviceloader.RecursiveServiceLoader" level="error"/>
 
-  <root level="debug">
+  <root level="warn">
     <appender-ref ref="console" />
     <appender-ref ref="warn" />
     <appender-ref ref="info" />
