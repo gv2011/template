@@ -4,13 +4,13 @@
   <parent>
     <groupId>com.github.gv2011</groupId>
     <artifactId>parent-gv</artifactId>
-    <version>1.5</version>
+    <version>1.6</version>
   </parent>
 
   <artifactId>template</artifactId>
   <version>0.2-SNAPSHOT</version>
  
-  <inceptionYear>2023</inceptionYear>
+  <inceptionYear>2024</inceptionYear>
 
   <developers>
     <developer>
@@ -65,5 +65,21 @@
       <scope>runtime</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.github.gv2011.template.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
